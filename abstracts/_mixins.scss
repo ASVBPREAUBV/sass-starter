@@ -1,0 +1,126 @@
+
+/*
+ * [ Abstracts > Variables ]
+ */
+
+// -----------------------------------------------------------------------------
+
+// 1. Text
+// ====================================
+
+@mixin truncate($max-width: null) {
+  max-width: $max-width;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin hyphenate {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+
+
+// 2. Box model
+// ====================================
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin ratio($x, $y) {
+  padding-top: percentage($y / $x);
+}
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+
+
+// 3. Positioning
+// ====================================
+
+@mixin position($position, $offsets) {
+  $properties: ('position', 'top', 'right', 'bottom', 'left');
+  $values: join($position, $offsets);
+  $declarations: zip($properties, $values);
+
+  @each $property, $value in $declarations {
+    #{$property}: $value;
+  }
+}
+
+@mixin absolute($values) {
+  @include position(absolute, $values);
+}
+
+@mixin fixed($values) {
+  @include position(fixed, $values);
+}
+
+@mixin relative($values) {
+  @include position(relative, $values);
+}
+
+@mixin center($position) {
+  @include position($position, 50% null null 50%);
+  transform: translate(-50%, -50%);
+}
+
+@mixin cover($position) {
+  @include position($position, 0 0 0 0);
+}
+
+
+
+// 4. Medias
+// ====================================
+
+@mixin screen($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+    $width: map_get($breakpoints, $width);
+    @if $type == max {
+      $width: $width - 1px;
+    }
+    @media screen and (#{$type}-width: $width) {
+      @content;
+    }
+  }
+}
+
+
+
+// 5. Miscellaneous
+// ====================================
+
+@mixin fill($fill) {
+  svg > * {
+    fill : $fill;
+  }
+}
+
+
+
+// 6. Config
+// ====================================
+
+// @author:   Zaydek MG
+// @link:     https://gist.github.com/ZAYDEK/6b2e55258734deabbd2b4a284321d6f6
+@mixin debug {
+  :not(g):not(path) {
+    color:                 hsla(210, 100%, 100%, 0.9) !important;
+    background:            hsla(210, 100%,  50%, 0.5) !important;
+    outline: solid 0.25rem hsla(210, 100%, 100%, 0.5) !important;
+
+    box-shadow: none !important;
+    filter:     none !important;
+  }
+}

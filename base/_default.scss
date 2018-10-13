@@ -1,0 +1,44 @@
+
+/*
+ * [ Base > Default ]
+ */
+
+// -----------------------------------------------------------------------------
+
+#{$all} {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  line-height: $line-height-base;
+  font-size: $font-size-base;
+  font-family: $font-primary;
+  color: $color-text;
+  background-color: $color-body;
+}
+
+#{$medias} {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  vertical-align: top;
+}
+
+nav ul,
+nav ol {
+  list-style: none;
+}
+
+svg {
+  fill: currentColor;
+}
+
+a, area, button, input, label, select, summary, textarea, [tabindex] {
+  touch-action: manipulation;
+}

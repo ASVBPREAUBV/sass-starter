@@ -1,0 +1,55 @@
+
+/*
+ * [ Abstracts > Functions ]
+ */
+
+// -----------------------------------------------------------------------------
+
+// 1. Colors
+// ====================================
+
+@function white($alpha) {
+  @return rgba($white, ($alpha / 100%));
+}
+
+@function black($alpha) {
+  @return rgba($black, ($alpha / 100%));
+}
+
+@function tint($color, $percent) {
+  @return mix($white, $color, $percent);
+}
+
+@function shade($color, $percent) {
+  @return mix($black, $color, $percent);
+}
+
+
+
+// 2. Assets
+// ====================================
+
+@function asset($type, $file) {
+  @return url($asset-base-path + '/' + $type + '/' + $file);
+}
+
+@function image($file) {
+  @return asset('images', $file);
+}
+
+@function icon($file) {
+  @return asset('icons', $file);
+}
+
+@function font($file) {
+  @return asset('fonts', $file);
+}
+
+
+
+// 3. Z-index
+// ====================================
+
+@function z($key) {
+  @return map-get($z-index, $key);
+}

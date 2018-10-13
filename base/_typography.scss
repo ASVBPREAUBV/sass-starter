@@ -1,0 +1,29 @@
+
+/*
+ * [ Base > Typography ]
+ */
+
+// -----------------------------------------------------------------------------
+
+h1, h2, h3, h4 {
+  line-height: $headings-line-height;
+}
+
+#{$headings} {
+  font-weight: $headings-font-weight;
+}
+
+@each $tag, $value in $headings-size {
+  #{$tag} {
+    font-size: $value;
+  }
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,35 @@
+
+/*
+ * [ Abstracts > Helpers ]
+ */
+
+// -----------------------------------------------------------------------------
+
+// 1. Blocks
+// ====================================
+
+.clearfix {
+  @include clearfix;
+}
+
+.fl-left {
+  float: left;
+}
+
+.fl-right {
+  float: right;
+}
+
+
+
+// 2. Texts
+// ====================================
+
+.text-sm {
+  font-size: $font-size-small;
+}
+
+.text-lg {
+  font-size: $font-size-large;
+}
+

@@ -1,0 +1,35 @@
+
+/*
+ * [ Base > Fonts ]
+ */
+
+// -----------------------------------------------------------------------------
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: font('open-sans/open-sans-regular.eot');
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       font('open-sans/open-sans-regular.eot?#iefix') format('embedded-opentype'),
+       font('open-sans/open-sans-regular.woff2') format('woff2'),
+       font('open-sans/open-sans-regular.woff') format('woff'),
+       font('open-sans/open-sans-regular.ttf') format('truetype'),
+       font('open-sans/open-sans-regular.svg#OpenSansRegular') format('svg');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: font('lato/lato-bold.eot');
+  src: local('Lato Bold'), local('Lato-Bold'),
+       font('lato/lato-bold.eot?#iefix') format('embedded-opentype'),
+       font('lato/lato-bold.woff2') format('woff2'),
+       font('lato/lato-bold.woff') format('woff'),
+       font('lato/lato-bold.ttf') format('truetype'),
+       font('lato/lato-bold.svg#LatoBold') format('svg');
+}
+
+
+// https://google-webfonts-helper.herokuapp.com/fonts

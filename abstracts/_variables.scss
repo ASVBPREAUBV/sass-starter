@@ -1,0 +1,112 @@
+
+/*
+ * [ Abstracts > Variables ]
+ */
+
+// -----------------------------------------------------------------------------
+
+// 1. Global config
+// ====================================
+
+$debug-mode: false;
+$asset-base-path: '../assets';
+
+$z-index: (
+  dropdown: 1010,
+  sticky: 1020,
+  modal: 1030,
+  tooltip: 1040
+);
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$container-width: 1280px;
+$container-gutter: 24px;
+
+
+
+// 2. Utilities
+// ====================================
+
+$headings:               unquote('h1, h2, h3, h4, h5, h6');
+$fields:                 unquote('input, textarea, select');
+$states:                 unquote('&:hover, &:focus');
+$medias:                 unquote('img, video, iframe');
+$all:                    unquote('*, *:before, *:after');
+
+
+
+// 3. Colors
+// ====================================
+
+$brand-primary:          #03a87c;
+$brand-accent:           #008cba;
+
+$brand-success:          #28a745;
+$brand-info:             #17a2b8;
+$brand-warning:          #ffc107;
+$brand-error:            #dc3545;
+
+$white:                  #ffffff;
+$black:                  #000000;
+
+$gray-light:             mix($white, $black, 75%);
+$gray:                   mix($white, $black, 50%);
+$gray-dark:              mix($white, $black, 25%);
+
+$color-body:             $white;
+$color-text:             $gray-dark;
+$color-link:             $brand-accent;
+
+
+
+// 4. Typography
+// ====================================
+
+$font-primary:           'Open Sans', sans-serif;
+$font-secondary:         'Lato', sans-serif;
+$font-system:            -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+$font-size-base:         16px;
+$font-size-large:        round($font-size-base * 1.125);
+$font-size-small:        round($font-size-base * 0.875);
+
+$headings-size: (
+  h1: round($font-size-base * 2.25),
+  h2: round($font-size-base * 2.00),
+  h3: round($font-size-base * 1.75),
+  h4: round($font-size-base * 1.50),
+  h5: round($font-size-base * 1.25),
+  h6: round($font-size-base * 1.00)
+);
+
+$line-height-base:       1.5;
+$headings-line-height:   1.2;
+$headings-font-weight:   700;
+
+
+
+// 5. Spaces
+// ====================================
+
+$space-xxs:              round($space-md / 4);
+$space-xs:               round($space-md / 3);
+$space-sm:               round($space-md / 2);
+$space-md:               $font-size-base;
+$space-lg:               round($space-md * 2);
+$space-xl:               round($space-md * 3);
+$space-xxl:              round($space-md * 4);
+
+
+
+// 6. Miscellaneous
+// ====================================
+
+$radius:                 4px;
+$transition:             unquote('0.25s ease-out');
+$shadow:                 unquote('0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)');

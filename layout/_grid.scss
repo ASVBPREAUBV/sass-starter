@@ -1,0 +1,12 @@
+
+/*
+ * [ Layout > Grid ]
+ */
+
+// -----------------------------------------------------------------------------
+
+.container {
+  max-width: $container-width;
+  padding: 0 $container-gutter;
+  margin: 0 auto;
+}
