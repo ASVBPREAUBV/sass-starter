@@ -1,7 +1,7 @@
 # Sass-starter
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/VeronQ/sass-starter/blob/master/LICENSE)
-[![GitHub version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=1.0.0)](https://github.com/VeronQ/lipsum/releases)
+[![GitHub version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=1.0.0)](https://github.com/VeronQ/sass-starter/releases)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/veronQ/sass-starter/graphs/commit-activity)
 
 [Sass-starter](https://github.com/VeronQ/sass-starter) is a light and structured Sass-based architecture which can be used as a starter for any type of web project.  
@@ -13,7 +13,7 @@ Styles are divided into **7 folders** and exported in the same order into a [mai
 
 1. [Abstracts](https://github.com/VeronQ/sass-starter/tree/master/abstracts)
 2. [Base](https://github.com/VeronQ/sass-starter/tree/master/base)
-3. [Components](https://github.com/VeronQ/sass-starter/tree/master/base)
+3. [Components](https://github.com/VeronQ/sass-starter/tree/master/components)
 4. [Layout](https://github.com/VeronQ/sass-starter/tree/master/layout)
 5. [Pages](https://github.com/VeronQ/sass-starter/tree/master/pages)
 6. [Themes](https://github.com/VeronQ/sass-starter/tree/master/themes)
