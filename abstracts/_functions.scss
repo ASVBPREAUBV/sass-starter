@@ -47,9 +47,13 @@
 
 
 
-// 3. Z-index
+// 3. Maps fetching
 // ====================================
 
-@function z($key) {
+@function level($key) {
   @return map-get($z-index, $key);
+}
+
+@function space($key) {
+  @return map-get($spaces, $key);
 }

@@ -94,13 +94,13 @@ $headings-font-weight:   700;
 // 5. Spaces
 // ====================================
 
-$space-xxs:              round($space-md / 4);
-$space-xs:               round($space-md / 3);
-$space-sm:               round($space-md / 2);
-$space-md:               $font-size-base;
-$space-lg:               round($space-md * 2);
-$space-xl:               round($space-md * 3);
-$space-xxl:              round($space-md * 4);
+$spaces: (
+  xs: round($space-md / 3);
+  sm: round($space-md / 2);
+  md: $font-size-base;
+  lg: round($space-md * 2);
+  xl: round($space-md * 3);
+);
 
 
 
