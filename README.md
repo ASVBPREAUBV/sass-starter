@@ -72,7 +72,7 @@ $z-index: (
   tooltip: 1040
 );
 
-@function z($key) {
+@function level($key) {
   @return map-get($z-index, $key);
 }
 ```
