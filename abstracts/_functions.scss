@@ -57,3 +57,7 @@
 @function space($key) {
   @return map-get($spaces, $key);
 }
+
+@function heading($key) {
+  @return map-get($headings, $key);
+}
