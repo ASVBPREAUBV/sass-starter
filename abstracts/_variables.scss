@@ -25,9 +25,6 @@ $breakpoints: (
   xl: 1200px
 );
 
-$container-width: 1280px;
-$container-gutter: 24px;
-
 
 
 // 2. Utilities
@@ -91,16 +88,13 @@ $headings-font-weight:   700;
 
 
 
-// 5. Spaces
+// 5. Layout
 // ====================================
 
-$spaces: (
-  xs: round($space-md / 3);
-  sm: round($space-md / 2);
-  md: $font-size-base;
-  lg: round($space-md * 2);
-  xl: round($space-md * 3);
-);
+$container-width: 1280px;
+$container-gutter: 24px;
+
+$space-base: 8px;
 
 
 

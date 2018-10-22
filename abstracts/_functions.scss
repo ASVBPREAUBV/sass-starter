@@ -46,16 +46,20 @@
 }
 
 
+// 3. Layout
+// ====================================
 
-// 3. Maps fetching
+@function space($multiplicator) {
+  @return ($space-base * $multiplicator);
+}
+
+
+
+// 4. Maps fetching
 // ====================================
 
 @function level($key) {
   @return map-get($z-index, $key);
-}
-
-@function space($key) {
-  @return map-get($spaces, $key);
 }
 
 @function heading($key) {
