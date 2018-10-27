@@ -49,7 +49,7 @@
 // 3. Layout
 // ====================================
 
-@function space($multiplier) {
+@function sp($multiplier) {
   @return ($space-base * $multiplier);
 }
 
