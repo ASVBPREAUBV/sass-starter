@@ -44,16 +44,16 @@ $gray-dark:    mix($white, $black, 25%);
 
 ###### Utility variables
 ```sass
-$headings:     unquote('h1, h2, h3, h4, h5, h6');
-$fields:       unquote('input, textarea, select');
-$states:       unquote('&:hover, &:focus');
-$medias:       unquote('img, video, iframe');
-$all:          unquote('*, *:before, *:after');
+$u-headings:   unquote('h1, h2, h3, h4, h5, h6');
+$u-fields:     unquote('input, textarea, select');
+$u-states:     unquote('&:hover, &:focus');
+$u-medias:     unquote('img, video, iframe');
+$u-all:        unquote('*, *:before, *:after');
 ```
 
 ###### Headings size
 ```sass
-$headings-size: (
+$headings: (
   h1: round($font-size-base * 2.25),
   h2: round($font-size-base * 2.00),
   h3: round($font-size-base * 1.75),
