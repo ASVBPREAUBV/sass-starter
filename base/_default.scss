@@ -5,7 +5,7 @@
 
 // -----------------------------------------------------------------------------
 
-#{$all} {
+#{$u-all} {
   box-sizing: border-box;
 }
 
@@ -14,6 +14,7 @@ html, body {
 }
 
 body {
+  min-width: 320px;
   line-height: $line-height-base;
   font-size: $font-size-base;
   font-family: $font-primary;
@@ -21,7 +22,7 @@ body {
   background-color: $color-body;
 }
 
-#{$medias} {
+#{$u-medias} {
   max-width: 100%;
   height: auto;
 }
